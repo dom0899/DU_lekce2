@@ -3,19 +3,19 @@ package com.engeto.Hotel;
 public class Room {
     private int numberOfBeds;
 
-    private int numberOfRooms;
+    private int numberOfRoom;
 
-    private boolean isBalcony;
+    private boolean hasBalcony;
 
     private boolean isSeaView;
     private int priceOfNights;
 
-    public Room(int numberOfRooms, int numberOfBeds, boolean isBalcony, boolean isSeaView, int priceOfNights) {
+    public Room(int numberOfRoom, int numberOfBeds, boolean hasBalcony, boolean isSeaView, int priceOfNights) {
         this.numberOfBeds = numberOfBeds;
-        this.isBalcony = isBalcony;
+        this.hasBalcony = hasBalcony;
         this.isSeaView = isSeaView;
         this.priceOfNights = priceOfNights;
-        this.numberOfRooms = numberOfRooms;
+        this.numberOfRoom = numberOfRoom;
     }
 
     public int getNumberOfBeds() {
@@ -26,12 +26,12 @@ public class Room {
         this.numberOfBeds = numberOfBeds;
     }
 
-    public boolean isBalcony() {
-        return isBalcony;
+    public boolean hasBalcony() {
+        return hasBalcony;
     }
 
     public void setBalcony(boolean balcony) {
-        isBalcony = balcony;
+        hasBalcony = balcony;
     }
 
     public boolean isSeaView() {
@@ -50,12 +50,14 @@ public class Room {
         this.priceOfNights = priceOfNights;
     }
 
-    public int getNumberOfRooms() {
-        return numberOfRooms;
+    public int getNumberOfRoom() {
+
+        return numberOfRoom;
     }
 
-    public void setNumberOfRooms(int numberOfRooms) {
-        this.numberOfRooms = numberOfRooms;
+    public void setNumberOfRoom(int numberOfRoom) {
+
+        this.numberOfRoom = numberOfRoom;
     }
 }
 
